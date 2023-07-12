@@ -3,7 +3,38 @@
 {% block content %}
 
 <body>
-    <h1 class="Login In"></h1>
+    <div class="container text-center">
+        <div class="login-img"></div>
+        <img src="/static/wm.png" alt="Walmart image">
+        <h1 class="h5 mt-5">Sign in or create your account</h1>
+        <p class="mb-0">Not sure if you have an account?</p>
+        <p>Enter your email and we'll check for you.</p>
+    </div>
+    <!-- Login Form -->
+    <div class="row fluid d-flex justify-content-center align-items-center mt-4">
+        <div class="col-md-3">
+
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <label class="h6" for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control p-4" name="email" style="border-color: hwb(0 49% 51%);"
+                        id="exampleFormControlInput1" value="{{ email }}">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-md active mt-4" style="width: 100%;"
+                        aria-pressed="true">Continue</button>
+                </div>
+            </form>
+
+
+
+        </div>
+    </div>
+    <div class="text-center">
+
+        <p class="mt-4">Securing your personal information is our priority.</p>
+
+    </div>
 </body>
 
 {% endblock %}

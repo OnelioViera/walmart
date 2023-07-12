@@ -4,8 +4,9 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand ml-4" style="font-size: 25px;" href="#">Flask App</a>
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <a class="navbar-brand ml-4" style="font-size: 25px;"></a>
+        <img src="/static/walmartLogo.svg" alt="Walmart">
+        <ul class="navbar-nav mr-auto ml-4 mt-2 mt-lg-0">
             <li class="nav-item active">
                 <a class="nav-link" style=" font-size: 20px;" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -14,7 +15,7 @@
         <form class="form-inline my-2 mr-4 my-lg-0">
             {% include "login-modal.html" %}
 
-            <button type="button" class="btn btn-white" data-toggle="modal" data-target="#exampleModal">
+            <button type="button" class="btn btn-white btn-sm" data-toggle="modal" data-target="#exampleModal">
                 <i class="fa fa-user mr-2"></i>
                 Sign In
             </button>
